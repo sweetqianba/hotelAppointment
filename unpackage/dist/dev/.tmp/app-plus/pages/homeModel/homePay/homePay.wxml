@@ -1,0 +1,2 @@
+<import src="./homePay.vue.wxml" />
+    <template is="150fcf02" data="{{ ...$root['0'], $root }}"/>

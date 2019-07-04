@@ -1,0 +1,1 @@
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/userModel/pwd/pwdPutPwd/pwdPutPwd.wxml') } }));

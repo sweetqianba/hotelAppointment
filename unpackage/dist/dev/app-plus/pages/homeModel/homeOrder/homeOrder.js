@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"sweet-text-left { display: inline-block; float: left; }\n.",[1],"sweet-text-right { display: inline-block; position: absolute; left: ",[0,200],"; }\n",],undefined,{path:"./pages/homeModel/homeOrder/homeOrder.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/homeModel/homeOrder/homeOrder.wxml') } }));

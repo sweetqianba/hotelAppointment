@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-icon": "/components/i-icon/i-icon",
+    "uni-shader": "/components/uni-shader"
+  },
+  "component": true
+}

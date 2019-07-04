@@ -1,119 +1,85 @@
-<script>
-	export default {
-		onLaunch: function() {
-			console.log('App Launch');
-		},
-		onShow: function() {
-			console.log('App Show');
-		},
-		onHide: function() {
-			console.log('App Hide');
-		}
-	}
-</script>
-
 <style>
 	/*每个页面公共css */
 	/* uni-app默认全局使用flex布局。因为flex布局有利于跨更多平台，尤其是采用原生渲染的平台。如不了解flex布局，请参考http://www.w3.org/TR/css3-flexbox/。如不使用flex布局，请删除或注释掉本行。*/
-	body,
-	page {
-		min-height: 100%;
-		display: flex;
+	.rightImg {
+		height: 100%;
+		width: 40%;
 	}
 
-	/* #ifdef MP-BAIDU */
-	page {
-		width: 100%;
+	.leftImg {
 		height: 100%;
+		width: 55%;
+	}
+
+	.fontSize8 {
+		font-size: 8px;
+	}
+
+	.fontSize10 {
+		font-size: 10px;
+	}
+
+	.marginLeft5 {
+		margin-left: 5px;
+	}
+
+	.bgWhiteToGrey {
+		background: -webkit-linear-gradient(white, #F0F0F0);
+		/* Safari 5.1 - 6.0 */
+		background: -o-linear-gradient(white, #F0F0F0);
+		/* Opera 11.1 - 12.0 */
+		background: -moz-linear-gradient(white, #F0F0F0);
+		/* Firefox 3.6 - 15 */
+		background: linear-gradient(white, #F0F0F0);
+		/* 标准的语法（必须放在最后） */
+	}
+
+	.noBg {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.bgTag {
+		-moz-background-size: 100% 100%;
+		background-size: 100% 100%;
+		color: white;
+		padding: 0 5px;
+		margin-left: 5px;
+	}
+
+	.padding2 {
+		padding: 2px;
+	}
+
+	.margin0 {
+		margin: -30upx 0 !important;
+	}
+
+	.gif-black {
+		mix-blend-mode: screen;
+	}
+
+	image[class*="gif-"] {
+		border-radius: 6rpx;
 		display: block;
 	}
 
-	swan-template {
-		width: 100%;
-		min-height: 100%;
-		display: flex;
+	.text-h2-cut {
+		text-overflow: ellipsis;
+		/*有些示例里需要定义该属性，实际可省略*/
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		/*规定超过两行的部分截断*/
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		word-break: break-all;
+		/*在任何地方换行*/
 	}
 
-	/* #endif */
-
-	/* 原生组件模式下需要注意组件外部样式 */
-	m-input {
-		width: 100%;
-		min-height: 100%;
-		display: flex;
+	.sweet-margin-right4px {
+		margin-right: 4px;
 	}
 
-	.content {
-		display: flex;
-		flex: 1;
-		flex-direction: column;
-		background-color: #efeff4;
-		padding: 20upx;
-	}
-
-	.input-group {
-		background-color: #ffffff;
-		margin-top: 40upx;
-		position: relative;
-	}
-
-	.input-group::before {
-		position: absolute;
-		right: 0;
-		top: 0;
-		left: 0;
-		height: 1upx;
-		content: '';
-		-webkit-transform: scaleY(.5);
-		transform: scaleY(.5);
-		background-color: #c8c7cc;
-	}
-
-	.input-group::after {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		height: 1upx;
-		content: '';
-		-webkit-transform: scaleY(.5);
-		transform: scaleY(.5);
-		background-color: #c8c7cc;
-	}
-
-	.input-row {
-		display: flex;
-		flex-direction: row;
-		position: relative;
-	}
-
-	.input-row .title {
-		width: 20%;
-		height: 50upx;
-		min-height: 50upx;
-		padding: 15upx 0;
-		padding-left: 30upx;
-		line-height: 50upx;
-	}
-
-	.input-row.border::after {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 15upx;
-		height: 1upx;
-		content: '';
-		-webkit-transform: scaleY(.5);
-		transform: scaleY(.5);
-		background-color: #c8c7cc;
-	}
-
-	.btn-row {
-		margin-top: 50upx;
-		padding: 20upx;
-	}
-
-	button.primary {
-		background-color: #0faeff;
+	.sweet-margin0 {
+		margin: 0;
 	}
 </style>

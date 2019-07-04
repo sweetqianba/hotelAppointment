@@ -1,0 +1,11 @@
+
+.sweet-text-left {
+	display: inline-block;
+	float: left;
+}
+.sweet-text-right {
+	display: inline-block;
+	position: absolute;
+	left: 200rpx;
+}
+

@@ -1,0 +1,1 @@
+<uni-password class="vue-ref" bind:input="__e" bind:confirm="__e" bind:autoCheck="__e" vue-id="1" data-ref="secrity" data-event-opts="{{[['^input',[['onInput']]],['^confirm',[['onConfirm']]],['^autoCheck',[['onAutoCheck']]]]}}" bind:__l="__l" vue-slots="{{['default']}}"><text>输入支付密码</text></uni-password>

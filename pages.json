@@ -1,51 +1,318 @@
 {
-    "pages": [ //pages数组中第一项表示应用启动页,
-        {
-            "path": "pages/main/main",
-            "style": {
-                "navigationBarTitleText": "登录模板"
-            }
-        }, {
-            "path": "pages/login/login",
-            "style": {
-                "navigationBarTitleText": "登录"
-            }
-        }, {
-            "path": "pages/reg/reg",
-            "style": {
-                "navigationBarTitleText": "注册"
-            }
-        }, {
-            "path": "pages/pwd/pwd",
-            "style": {
-                "navigationBarTitleText": "找回密码"
-            }
-        }, {
-            "path": "pages/user/user",
-            "style": {
-                "navigationBarTitleText": "我的"
-            }
-        }
-    ],
-    "tabBar": {
-        "color": "#7a7e83",
-        "selectedColor": "#0faeff",
-        "backgroundColor": "#ffffff",
-        "list": [{
-            "pagePath": "pages/main/main",
-            "text": "首页",
-            "iconPath": "static/img/home.png",
-            "selectedIconPath": "static/img/homeHL.png"
-        }, {
-            "pagePath": "pages/user/user",
-            "text": "我的",
-            "iconPath": "static/img/user.png",
-            "selectedIconPath": "static/img/userHL.png"
-        }]
-    },
-    "globalStyle": {
-        "navigationBarTextStyle": "white",
-        "navigationBarBackgroundColor": "#0faeff",
-        "backgroundColor": "#fbf9fe"
-    }
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/main/main",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#007AFF"
+					},
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"borderRadius": "10px",
+							"placeholder": "输入地点"
+						},
+						"buttons": [{
+							"text": "搜索",
+							"float": "right",
+							"fontSize": "14"
+						}]
+					}
+				}
+			}
+		},
+		// 我的模块------------------start
+		// 主界面
+		{
+			"path": "pages/userModel/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		// 右上角的设置按钮
+		{
+			"path": "pages/userModel/setting/setting",
+			"style": {
+				"navigationBarTitleText": "设置"
+			}
+		},
+		// 登录界面
+		{
+			"path": "pages/userModel/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		// 注册界面
+		{
+			"path": "pages/userModel/reg/reg",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		// 个人信息界面
+		{
+			"path": "pages/userModel/userInfo/userInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		// 我的钱包界面
+		{
+			"path": "pages/userModel/wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "我的钱包"
+			}
+		},
+		// 换绑手机界面
+		{
+			"path": "pages/userModel/phone/phone",
+			"style": {
+				"navigationBarTitleText": "换绑手机"
+			}
+		},
+		// 支付设置界面
+		{
+			"path": "pages/userModel/paySetting/paySetting",
+			"style": {
+				"navigationBarTitleText": "支付设置"
+			}
+		},
+		// --在不存在支付密码的时候，仅可设置支付密码
+		{
+			"path": "pages/userModel/paySetting/newPwd/newPwd",
+			"style": {
+				"navigationBarTitleText": "设置支付密码"
+			}
+		},
+		// --存在支付密码的时候，可以重置支付密码
+		{
+			"path": "pages/userModel/paySetting/getPwd/getPwd",
+			"style": {
+				"navigationBarTitleText": "重置支付密码"
+			}
+		},
+		// --同上，可修改支付密码，先进行身份验证
+		{
+			"path": "pages/userModel/paySetting/setPwd/setPwd",
+			"style": {
+				"navigationBarTitleText": "身份验证"
+			}
+		},
+		// --同上，进行完身份验证之后，可修改支付密码
+		{
+			"path": "pages/userModel/paySetting/setPwd/setPwdCenter",
+			"style": {
+				"navigationBarTitleText": "修改支付密码"
+			}
+		},
+		// 修改登陆密码界面
+		{
+			"path": "pages/userModel/pwd/password",
+			"style": {
+				"navigationBarTitleText": "密码中心"
+			}
+		},
+		// --直接填写旧的登录密码和新的登录密码进行修改
+		{
+			"path": "pages/userModel/pwd/pwdPutPwd/pwdPutPwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		// --用短信验证的方式找回
+		{
+			"path": "pages/userModel/pwd/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "找回密码"
+			}
+		},
+		// 关于界面
+		{
+			"path": "pages/userModel/about/about",
+			"style": {
+				"navigationBarTitleText": "关于邯郸通"
+			}
+		},
+		// 我的模块------------------end
+
+
+		// 订单模块--------------start
+		// 订单主页面
+		{
+			"path": "pages/orderModel/orders",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		// 订单详情页面
+		{
+			"path": "pages/orderModel/orderDetails/orderDetails",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		// 订单模块--------------end
+
+
+		// 酒店模块--------------start
+		// 酒店主页面
+		{
+			"path": "pages/hotelModel/hotels",
+			"style": {
+				"navigationBarTitleText": "酒店",
+				"onReachBottomDistance": 50
+			}
+		},
+		// 酒店列表
+		{
+			"path": "pages/hotelModel/hotelList/hotelList",
+			"style": {
+				"navigationBarTitleText": "查找结果",
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"borderRadius": "10px",
+							"placeholder": "输入酒店名称"
+						},
+						"buttons": [{
+							"text": "搜索",
+							"float": "right",
+							"fontSize": "14"
+						}]
+					}
+				}
+			}
+		},
+		// 酒店地点界面
+		{
+			"path": "pages/hotelModel/around/around",
+			"style": {
+				"navigationBarTitleText": "搜索酒店",
+				"app-plus": {
+					"titleNView": {
+						"searchInput": {
+							"align": "center",
+							"borderRadius": "10px",
+							"placeholder": "输入酒店名称"
+						},
+						"buttons": [{
+							"text": "搜索",
+							"float": "right",
+							"fontSize": "14"
+						}]
+					}
+				}
+			}
+		},
+		// 酒店地图
+		{
+			"path": "pages/hotelModel/map/map",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		// 酒店模块-------------------end
+
+
+		// 房间模块-------------------start
+		// 房间主界面
+		{
+			"path": "pages/homeModel/home",
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent"
+					}
+				}
+			}
+		},
+		// 房间预订订单界面
+		{
+			"path": "pages/homeModel/homeOrder/homeOrder",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		// 房间订单支付界面
+		{
+			"path": "pages/homeModel/homePay/homePay",
+			"style": {
+				"navigationBarTitleText": "支付界面"
+			}
+		},
+		// 房间模块--------------------end
+
+
+		// 评价模块--------------------start
+		// 评价主界面
+		{
+			"path": "pages/evaluateModel/evaluate",
+			"style": {
+				"navigationBarTitleText": "我的评价"
+			}
+		},
+		// 发现更多界面
+		{
+			"path": "pages/evaluateModel/findOthers/findOthers",
+			"style": {
+				"navigationBarTitleText": "发现更多"
+			}
+		}
+		// 评价模块--------------------end
+	],
+	"tabBar": {
+		"color": "#7a7e83",
+		"selectedColor": "#0faeff",
+		"backgroundColor": "#ffffff",
+		"position": "bottom",
+		"list": [{
+			"pagePath": "pages/main/main",
+			"text": "首页",
+			"iconPath": "static/img/home.png",
+			"selectedIconPath": "static/img/homeHL.png"
+		}, {
+			"pagePath": "pages/evaluateModel/findOthers/findOthers",
+			"text": "发现",
+			"iconPath": "static/img/unfind.png",
+			"selectedIconPath": "static/img/find.png"
+		}, {
+			"pagePath": "pages/hotelModel/hotels",
+			"text": "酒店",
+			"iconPath": "static/img/unhotel.png",
+			"selectedIconPath": "static/img/hotel.png"
+		}, {
+			"pagePath": "pages/orderModel/orders",
+			"text": "订单",
+			"iconPath": "static/img/unorders.png",
+			"selectedIconPath": "static/img/orders.png"
+		}, {
+			"pagePath": "pages/userModel/user",
+			"text": "我的",
+			"iconPath": "static/img/user.png",
+			"selectedIconPath": "static/img/userHL.png"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0faeff",
+		"backgroundColor": "#fbf9fe"
+	},
+	"style": {
+		"app-plus": {
+			"animationType": "fade-in",
+			"animationDuration": 300
+		}
+	}
 }

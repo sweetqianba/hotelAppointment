@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"topImage { width: 100%; }\n.",[1],"sweet-tag { width: ",[0,150],"; opacity: 0.8; position: absolute; top: ",[0,200],"; right: ",[0,50],"; }\n",],undefined,{path:"./pages/homeModel/home.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/homeModel/home.wxml') } }));

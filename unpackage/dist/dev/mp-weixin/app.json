@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/userModel/user",
+    "pages/userModel/setting/setting",
+    "pages/userModel/login/login",
+    "pages/userModel/reg/reg",
+    "pages/userModel/userInfo/userInfo",
+    "pages/userModel/wallet/wallet",
+    "pages/userModel/phone/phone",
+    "pages/userModel/paySetting/paySetting",
+    "pages/userModel/paySetting/newPwd/newPwd",
+    "pages/userModel/paySetting/getPwd/getPwd",
+    "pages/userModel/paySetting/setPwd/setPwd",
+    "pages/userModel/paySetting/setPwd/setPwdCenter",
+    "pages/userModel/pwd/password",
+    "pages/userModel/pwd/pwdPutPwd/pwdPutPwd",
+    "pages/userModel/pwd/pwd/pwd",
+    "pages/userModel/about/about",
+    "pages/orderModel/orders",
+    "pages/orderModel/orderDetails/orderDetails",
+    "pages/hotelModel/hotels",
+    "pages/hotelModel/hotelList/hotelList",
+    "pages/hotelModel/around/around",
+    "pages/hotelModel/map/map",
+    "pages/homeModel/home",
+    "pages/homeModel/homeOrder/homeOrder",
+    "pages/homeModel/homePay/homePay",
+    "pages/evaluateModel/evaluate",
+    "pages/evaluateModel/findOthers/findOthers"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0faeff",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#0faeff",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/homeHL.png"
+      },
+      {
+        "pagePath": "pages/evaluateModel/findOthers/findOthers",
+        "text": "发现",
+        "iconPath": "static/img/unfind.png",
+        "selectedIconPath": "static/img/find.png"
+      },
+      {
+        "pagePath": "pages/hotelModel/hotels",
+        "text": "酒店",
+        "iconPath": "static/img/unhotel.png",
+        "selectedIconPath": "static/img/hotel.png"
+      },
+      {
+        "pagePath": "pages/orderModel/orders",
+        "text": "订单",
+        "iconPath": "static/img/unorders.png",
+        "selectedIconPath": "static/img/orders.png"
+      },
+      {
+        "pagePath": "pages/userModel/user",
+        "text": "我的",
+        "iconPath": "static/img/user.png",
+        "selectedIconPath": "static/img/userHL.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

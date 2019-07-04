@@ -1,0 +1,2 @@
+setCssToHead(["body { height: 100%; }\n",],undefined,{path:"./pages/hotelModel/map/map.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/hotelModel/map/map.wxml') } }));

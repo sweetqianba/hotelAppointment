@@ -1,0 +1,48 @@
+<template>
+	<uni-password ref="secrity" @input="onInput" @confirm="onConfirm" @autoCheck="onAutoCheck">
+		<text>输入原先的支付密码，如果忘记请前往</text><text class="text-blue" @tap="goGetPwd">重置支付密码</text>
+	</uni-password>
+</template>
+
+<script>
+	import uniPassword from '../../../../components/uni-password/uni-password.vue'
+	import uniKeyboard from '../../../../components/uni-keyboard.vue'
+	export default {
+		components: {
+			uniKeyboard,
+			uniPassword
+		},
+		data() {
+			return {
+				showKeyboard: false
+			}
+		},
+		methods: {
+			onInput(e) {},
+			onConfirm(e) {},
+			onAutoCheck(e) {
+				let password = e.password.join('')
+				// 自动验证
+				let paypassword = uni.getStorageSync('userInfo').paypassword
+				if (paypassword == password) {
+					uni.navigateTo({
+						url: 'setPwdCenter'
+					})
+				} else {
+					uni.showToast({
+						icon: 'none',
+						title: '输入错误，请重新输入'
+					})
+				}
+			},
+			goGetPwd() {
+				uni.navigateTo({
+					url: '../getPwd/getPwd'
+				})
+			}
+		},
+	}
+</script>
+
+<style>
+</style>

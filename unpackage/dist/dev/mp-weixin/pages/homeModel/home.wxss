@@ -1,0 +1,18 @@
+
+.topImage {
+	width: 100%;
+	
+	height: 350rpx;
+	
+}
+.sweet-tag {
+	width: 150rpx;
+	opacity: 0.8;
+	position: absolute;
+	
+	
+	top: 50rpx;
+	
+	right: 50rpx;
+}
+

@@ -1,0 +1,1 @@
+<import src="/components/uni-password/uni-password.vue.wxml" /><template name="150fcf02"><template ref="secrity" bindinput="handleProxy" bindconfirm="handleProxy" bindautoCheck="handleProxy" data-eventid="{{'150fcf02-0'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'150fcf02-0'],$root}}" is="f1260a72"></template></template>

@@ -1,0 +1,8 @@
+<import src="/components/uni-password/uni-password.vue.wxml" />
+
+<template name="M8ece1f6c-default-8ece1f6c-0"><text class="_text M8ece1f6c">输入新的支付密码</text></template>
+
+<template name="Maf2e08d6-default-af2e08d6-0"><text class="_text Maf2e08d6">输入原先的支付密码，如果忘记请前往</text><text class="_text Maf2e08d6 text-blue" bindtap="handleProxy" data-eventid="{{'af2e08d6-0'}}" data-comkey="{{$k}}">重置支付密码</text></template>
+
+<template name="M93fdd556-default-93fdd556-0"><text class="_text M93fdd556">输入支付密码</text></template>
+

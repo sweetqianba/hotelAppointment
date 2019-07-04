@@ -1,0 +1,19 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "查找结果",
+  "onReachBottomDistance": 50,
+  "titleNView": {
+    "searchInput": {
+      "align": "center",
+      "borderRadius": "10px",
+      "placeholder": "输入酒店名称"
+    },
+    "buttons": [
+      {
+        "text": "搜索",
+        "float": "right",
+        "fontSize": "14"
+      }
+    ]
+  }
+}

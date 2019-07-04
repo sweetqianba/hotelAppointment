@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "支付界面",
+  "usingComponents": {
+    "uni-keyboard": "/components/uni-keyboard",
+    "uni-password": "/components/uni-password/uni-password"
+  }
+}

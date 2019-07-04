@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "酒店",
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "calendar": "/components/date-picker/date-picker"
+  }
+}

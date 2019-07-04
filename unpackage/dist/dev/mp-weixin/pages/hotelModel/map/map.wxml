@@ -1,0 +1,1 @@
+<view style="height:100%;"><map style="width:100%;height:100%;" id="myMap" controls="{{controls}}" markers="{{covers}}" polyline="{{polyline}}" circles="{{circles}}" show-location="{{true}}" data-event-opts="{{[['markertap',[['markerEvent',['$event']]]],['controltap',[['controlEvent',['$event']]]]]}}" bindmarkertap="__e" bindcontroltap="__e"></map></view>

@@ -1,0 +1,2 @@
+<import src="./hotels.vue.wxml" />
+    <template is="7dbd89bd" data="{{ ...$root['0'], $root }}"/>
